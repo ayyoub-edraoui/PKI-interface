@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Utilisation des infrastructures à clé publique</title>
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+    <style>
+        /* Style pour la section de titre */
+#titre {
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 30px;
+  font-size: 30px;
+}
+
+/* Style pour les sous-titres */
+.sous-titre {
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+/* Style pour les images */
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
+  height: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+/* Style pour les listes */
+ul {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 50px;
+  list-style: disc;
+}
+
+/* Style pour les liens */
+a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #0056b3;
+  text-decoration: underline;
+}
+
+/* Style pour les paragraphes de texte */
+p {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+/* Style pour les encadrés */
+.encadre {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+/* Style pour les titres d'encadré */
+.encadre-titre {
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+/* Style pour les icônes */
+i {
+  font-size: 30px;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">Infrastructure à clé publique</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Accueil</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="definition.html">Définition</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="utilisation.html">Utilisation</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="fonctionnement.html">Fonctionnement</a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link" href="sumilation.html">Simulation</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+        </div>
+      </nav>
+    </header>
+    <main class="container">
+      <h1>Utilisation des infrastructures à clé publique</h1>
+      <p>Les infrastructures à clé publique sont utilisées pour sécuriser les communications et les transactions en ligne. Voici quelques exemples d'utilisation :</p>
+      <h2>Sécurisation des e-mails</h2>
+      <p>Les infrastructures à clé publique peuvent être utilisées pour chiffrer les e-mails afin de les rendre illisibles pour les personnes qui n'ont pas la clé privée correspondante. Cela peut aider à protéger les communications sensibles, telles que les informations financières ou médicales.</p>
+      <p>Le processus de sécurisation des e-mails avec une infrastructure à clé publique implique l'utilisation de deux clés : une clé publique et une clé privée. La clé publique peut être partagée librement et est utilisée pour chiffrer le message, tandis que la clé privée est gardée secrète et est utilisée pour déchiffrer le message. Lorsqu'un utilisateur envoie un e-mail chiffré avec une infrastructure à clé publique, il utilise la clé publique de son destinataire pour chiffrer le message. Le destinataire peut ensuite utiliser sa propre clé privée pour déchiffrer le message et le lire.</p>
+      <h2>Transactions financières en ligne</h2>
+      <p>Les infrastructures à clé publique sont également utilisées pour protéger les transactions financières en ligne, telles que les achats en ligne et les transferts de fonds. Les clés publiques et privées sont utilisées pour s'assurer que les transactions ne peuvent être modifiées ou falsifiées.</p>
+      <p>Le processus de protection des transactions financières en ligne avec une infrastructure à clé publique implique l'utilisation de deux clés : une clé publique et une clé privée. La clé publique peut être partagée librement et est utilisée pour vérifier l'identité de l'utilisateur et pour chiffrer les informations de la transaction, tandis que la clé privée est gardée secrète et est utilisée pour déchiffrer les informations et valider la transaction. Lorsqu'un utilisateur effectue une transaction en ligne, il utilise la clé publique du destinataire pour chiffrer les informations de la transaction. Le destinataire peut ensuite utiliser sa propre clé privée pour déchiffrer les informations et valider la transaction.</p>
+      <h2>Authentification</h2>
+      <p>Les infrastructures à clé publique peuvent être utilisées pour l'authentification des utilisateurs en ligne. Les clés publiques et privées sont utilisées pour s'assurer que l'utilisateur est bien celui qu'il prétend être.</p>
+      <p>Le processus d'authentification avec une infrastructure à clé publique implique l'utilisation de deux clés : une clé publique et une clé privée. L'utilisateur envoie sa clé publique à un serveur d'authentification. Le serveur utilise cette clé publique pour chiffrer un message de défi, que l'utilisateur doit déchiffrer à l'aide de sa clé privée et renvoyer au serveur. Si l'utilisateur peut déchiffrer le message de défi avec succès, le serveur peut être sûr que l'utilisateur possède la clé privée correspondante à la clé publique qu'il a fournie, ce qui prouve son identité.</p>
+      </main>
+      <footer>
+      <p>© 2023 - Infrastructure à clé publique</p>
+      </footer>
+      
+        </body>
+      </html>

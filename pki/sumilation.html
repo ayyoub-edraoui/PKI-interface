@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Simulation OpenSSL</title>
+  <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="index.html">Infrastructure à clé publique</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="definition.html">Définition</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="utilisation.html">Utilisation</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="fonctionnement.html">Fonctionnement</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="outils.html">Outils</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="simulation.html">Simulation</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main class="container">
+    <h1>Simulation OpenSSL</h1>
+    <p>
+      Dans cette page, nous allons faire une démonstration d'utilisation d'OpenSSL pour générer des clés publiques et privées, ainsi que pour signer et vérifier des fichiers.
+    </p>
+
+    <h2>Génération de clés publiques et privées</h2>
+    <p>
+      Pour générer une paire de clés publiques et privées avec OpenSSL, nous pouvons utiliser la commande suivante :
+    </p>
+
+    <pre><code>openssl genpkey -algorithm RSA -out private.pem -aes256</code></pre>
+
+    <p>
+      Cette commande génère une clé privée RSA chiffrée avec l'algorithme AES-256 et la stocke dans le fichier <code>private.pem</code>.
+    </p>
+
+    <p>
+      Nous pouvons également générer la clé publique correspondante à partir de la clé privée avec la commande suivante :
+    </p>
+
+    <pre><code>openssl rsa -pubout -in private.pem -out public.pem</code></pre>
+
+    <p>
+      Cette commande génère la clé publique correspondante à la clé privée stockée dans le fichier <code>private.pem</code> et la stocke dans le fichier <code>public.pem</code>.
+    </p>
+
+    <h2>Signature et vérification de fichiers</h2>
+    <p>
+      Pour signer un fichier avec OpenSSL, nous pouvons utiliser la commande suivante :
+    </p>
+
+    <pre><code>openssl dgst -sha256 -sign private.pem -out file.sha256 file.txt</code></pre>
+
+    <p>
+      Cette commande calcule la somme de hachage SHA-256 du fichier <code>file.txt</code>, signe</p>
+         
+     
+      <p>
+        Pour vérifier la signature d'un fichier, nous pouvons utiliser la commande suivante :
+      </p>
+      
+      <pre><code>openssl dgst -sha256 -verify public.pem -signature file.sha256 file.txt</code></pre>
+      
+      <p>
+        Cette commande calcule à nouveau la somme de hachage SHA-256 du fichier <code>file.txt</code>, vérifie la signature stockée dans le fichier <code>file.sha256</code> à l'aide de la clé publique stockée dans le fichier <code>public.pem</code> et affiche le résultat de la vérification.
+      </p>
+      
+      <p>
+        C'est tout pour cette démonstration d'utilisation d'OpenSSL ! N'hésitez pas à expérimenter avec les différentes commandes et options pour mieux comprendre le fonctionnement de cet outil puissant.
+      </p>
+      
+     
+      <p>
+
+        Pour vérifier la signature d'un fichier avec OpenSSL, nous pouvons utiliser la commande suivante :
+      </p>
+      
+      <pre><code>openssl dgst -sha256 -verify public.pem -signature file.sha256 file.txt</code></pre>
+      
+      <p>
+        Cette commande calcule la somme de hachage SHA-256 du fichier <code>file.txt</code>, vérifie la signature stockée dans le fichier <code>file.sha256</code> avec la clé publique stockée dans le fichier <code>public.pem</code> et affiche un message indiquant si la vérification a réussi ou non.
+      </p>
+    </main>
+    <footer>
+      <p>&copy; 2023 OpenSSL</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+  </html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infrastructure à clé publique</title>
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <style>
+        /* Ajoutez vos styles CSS ici */
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">Infrastructure à clé publique</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="definition.html">Définition</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="utilisation.html">Utilisation</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="fonctionnement.html">Fonctionnement</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="outils.html">Outils</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="definition">
+            <div class="container">
+                <h1>Définition</h1>
+                <p>L'infrastructure à clé publique (ICP) est un système cryptographique qui utilise des clés publiques et privées pour sécuriser les échanges de données sur les réseaux informatiques. Les clés publiques peuvent être distribuées publiquement sans compromettre la sécurité des communications, tandis que les clés privées doivent être gardées secrètes par leurs propriétaires.</p>
+            </div>
+        </section>
+
+        <section id="utilisation">
+            <div class="container">
+                <h1>Utilisation</h1>
+                <p>L'ICP est utilisée dans de nombreux domaines pour garantir la sécurité des communications et des transactions. Voici quelques exemples d'applications de l'ICP:</p>
+                <ul>
+                    <li>Les transactions financières en ligne, telles que les paiements par carte de crédit.</li>
+                    <li>Les échanges de courriers électroniques sécurisés.</li>
+                    <li>Les réseaux privés virtuels (VPN) pour sécuriser les connexions à distance.</li>
+                    <li>Les certificats numériques pour garantir l'authenticité et l'intégrité des sites web.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="fonctionnement">
+            <div class="container">
+                <h1>Fonctionnement</h1>
+                <p>L'ICP repose sur l'utilisation de paires de clés, une publique et une privée, pour chiffrer et déchiffrer les données transmises sur un réseau. La clé publique peut être partagée publiquement et est utilisée pour chiffrer les données qui ne pourront être déchiffrées qu'avec la clé privée correspondante. Cette clé privée est gardée secrète et n'est pas partagée. Elle est utilisée pour déchiffrer les données qui ont été chiffrées avec la clé publique correspondante.</p>
+                <p>L'ICP utilise également des certificats numériques pour garantir l'authenticité et l'intégrité des échanges. Les certificats numériques sont émis par des autorités de certification (CA) et contiennent des informations sur l'identité du titulaire de la clé publique et la validité du certificat. Les certificats numériques sont vérifiés pour garantir que la clé publique utilisée pour chiffrer les données appartient bien au titulaire du certificat.</p>
+            </div>
+        </section>
+    
+        <section id="outils">
+            <div class="container">
+                <h1>Outils</h1>
+                <p>Il existe de nombreux outils pour utiliser l'ICP, notamment:</p>
+                <ul>
+                    <li>OpenSSL: une bibliothèque open source pour la cryptographie.</li>
+                    <li>GnuPG: un logiciel de cryptographie pour la protection de la vie privée.</li>
+                    <li>Microsoft Certificate Services: une autorité de certification pour les systèmes d'exploitation Windows.</li>
+                    <li>Let's Encrypt: une autorité de certification gratuite pour les sites web.</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Infrastructure à clé publique</p>
+        </div>
+    </footer>
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>    
